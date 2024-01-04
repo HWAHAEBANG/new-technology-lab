@@ -1,0 +1,17 @@
+.sectionDevider{
+    display: flex;
+}
+
+.sideBarSection{
+    width: 200px;
+    box-shadow: 6px 2px 15px -4px #000000;
+    -webkit-box-shadow: 6px 2px 15px -4px #000000; 
+}
+
+.mainSection{
+    height: 100vh;
+    width: calc(100vw - 200px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
