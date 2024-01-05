@@ -15,7 +15,7 @@ export const SIDE_BAR_LIST = [
       {
         id: 3,
         title: '로그인 & 회원가입',
-        path: '/auth/other-page',
+        path: '/auth',
         description: '로그인 & 회원가입을 실제 사용가능 수준을 퀄리티로 구현합니다.',
         feat: ['nextjs', 'contextAPI', 'jest'],
       },
