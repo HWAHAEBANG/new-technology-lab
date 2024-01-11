@@ -1,0 +1,33 @@
+.mainContainer{
+    background-color: aqua;
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    padding: 100px;
+}
+
+.leftWrapper {
+    background-color: red;
+    height: 100dvh;
+    width: 200px;
+    flex-grow: 1;
+}
+
+.rightWrapper {
+    background-color: green;
+    height: 100dvh;
+    width: 800px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentArea{
+    background-color: palevioletred;
+    width: 500px;
+}
+
+.asideBar {
+    background-color: blue;
+    width: 300px;
+}
