@@ -47,6 +47,13 @@ export const SIDE_BAR_LIST = [
         description: '네이버 지도 구현합니다.',
         feat: ['nextjs', 'contextAPI', 'jest'],
       },
+      {
+        id: 11,
+        title: 'SNS',
+        path: '/sns',
+        description: 'SNS 구현합니다.',
+        feat: ['nextjs', 'contextAPI', 'jest'],
+      },
     ],
   },
   {

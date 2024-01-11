@@ -42,8 +42,7 @@ const SignupModal = () => {
       <form className={styles.modal} onSubmit={regist}>
         <h1 className={styles.title}>회원가입</h1>
         <button className={styles.closeBtn} type="button" onClick={close}>
-          {' '}
-          X{' '}
+          X
         </button>
         <InputBox<UserInfo>
           name="id"
