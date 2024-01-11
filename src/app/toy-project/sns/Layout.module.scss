@@ -1,5 +1,5 @@
 .mainContainer{
-    background-color: aqua;
+    background-color: white;
     display: flex;
     align-items: stretch;
     width: 100%;
@@ -7,14 +7,15 @@
 }
 
 .leftWrapper {
-    background-color: red;
+    position: fixed;
     height: 100dvh;
     width: 200px;
     flex-grow: 1;
+    border-right: 1px solid gainsboro;
 }
 
 .rightWrapper {
-    background-color: green;
+    margin-left: 200px;
     height: 100dvh;
     width: 800px;
     flex-grow: 1;
@@ -23,11 +24,17 @@
 }
 
 .contentArea{
-    background-color: palevioletred;
     width: 500px;
+    border-right: 1px solid gainsboro;
 }
 
 .asideBar {
-    background-color: blue;
     width: 300px;
+}
+
+.logoWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
 }

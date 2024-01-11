@@ -1,21 +1,25 @@
 .wrapper{
-    background-color: purple;
     display: flex;
     height: 70px;
-}
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid gainsboro;
 
-.recommendBtn{
+    & > button {
     flex: 1;
     position: relative;
-}
+    background: none;
+    border: none;
+    color: black;
+    }
 
-.followBtn{
-    flex: 1;
-    position: relative;
+    & > button:hover {
+    background-color: white;
+    filter: brightness(0.97);
+    }
 }
 
 .tabIndicator{
-    background-color: green;
+    background-color: #1E1E32;
     width: 100px;
     height: 5px;
     position: absolute;
