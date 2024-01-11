@@ -11,34 +11,6 @@ height: 40px;
 cursor: pointer;
 }
 
-.logoutBtn{
-    position: fixed;
-    bottom: 20px;
-    left: 298px;
-    width: 200px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3px;
-    background: none;
-    border: none;
-    color: black;
-    cursor: pointer;
-
-    & > div{
-        text-align: left;
-    } 
-
-    & > div :first-child{
-        font-size: 15px;
-        font-weight: 700;
-    }
-
-    & > div :last-child{
-        font-size: 12px;
-    }
-}
 
 
 .wrapper{
@@ -63,8 +35,36 @@ cursor: pointer;
     background-color: white;
     padding: 10px;
     
-
+    
     &:hover{
         filter: brightness(0.97);
     }
 }
+
+    .logoutBtn{
+        position: fixed;
+        bottom: 20px;
+        width: 200px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3px;
+        background: none;
+        border: none;
+        color: black;
+        cursor: pointer;
+    
+        & > div{
+            text-align: left;
+        } 
+    
+        & > div :first-child{
+            font-size: 15px;
+            font-weight: 700;
+        }
+    
+        & > div :last-child{
+            font-size: 12px;
+        }
+    }

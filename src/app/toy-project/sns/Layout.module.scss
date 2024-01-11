@@ -2,8 +2,6 @@
     background-color: white;
     display: flex;
     align-items: stretch;
-    width: 100%;
-    padding: 100px;
 }
 
 .leftWrapper {
@@ -17,14 +15,14 @@
 .rightWrapper {
     margin-left: 200px;
     height: 100dvh;
-    width: 800px;
+    width: 700px;
     flex-grow: 1;
     display: flex;
     justify-content: space-between;
 }
 
 .contentArea{
-    width: 500px;
+    width: 700px;
     border-right: 1px solid gainsboro;
 }
 
