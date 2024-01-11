@@ -12,6 +12,7 @@
     "test:watch": "jest --watch"
   },
   "dependencies": {
+    "@faker-js/faker": "^8.3.1",
     "@typescript-eslint/eslint-plugin": "^6.17.0",
     "classnames": "^2.5.1",
     "next": "14.0.4",
