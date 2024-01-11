@@ -1,0 +1,25 @@
+.wrapper{
+    background-color: purple;
+    display: flex;
+    height: 70px;
+}
+
+.recommendBtn{
+    flex: 1;
+    position: relative;
+}
+
+.followBtn{
+    flex: 1;
+    position: relative;
+}
+
+.tabIndicator{
+    background-color: green;
+    width: 100px;
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
