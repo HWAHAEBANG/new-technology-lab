@@ -1,0 +1,37 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.heading{
+    font-size: 20px;
+    padding: 20px;
+}
+
+.ul{
+    list-style-type: none;
+}
+
+.li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 15px;
+    
+    &:hover{
+        background-color: #F2F2F2;
+    }
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.userName{
+    font-weight: 900;
+}
+
+
+

@@ -1,0 +1,35 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.counterpart{
+    & > div{
+    background-color: #eff3f4; 
+    display: inline;
+    padding: 7px 10px;
+    border-radius: 22px 22px 22px 0;
+    }
+
+    & > p{
+        margin: 10px 10px 10px 5px;
+        font-size: 12px;
+    }
+}
+
+.me{
+    text-align: right;
+
+    & > div{
+        background-color: #0083EB;
+        display: inline;
+        padding: 7px 10px;
+        border-radius: 22px 22px 0 22px;
+    }
+
+    & > p{
+        margin: 10px 5px 10px 10px;
+        font-size: 12px;
+    }
+}

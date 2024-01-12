@@ -1,0 +1,30 @@
+.container{
+    position: fixed;
+    background-color: #F2F2F2;
+    bottom: 0;
+    width: inherit;
+    height: 50px;
+    display: flex;
+}
+
+.textArea{
+    resize: none;
+    width: 100%;
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    outline: none;
+}
+
+.submitBtn{
+    position: absolute;
+    bottom: 12px;
+    right: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
