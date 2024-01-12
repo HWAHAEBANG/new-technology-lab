@@ -16,7 +16,7 @@ const PostForm = () => {
       <form className={styles.form}>
         <textarea className={styles.textArea} />
         <div className={styles.btnWrapper}>
-          <input type="file" ref={imageRef} hidden />
+          <input type="file" ref={imageRef} multiple hidden />
           <button type="button" className={styles.uploadBtn}>
             <svg onClick={uploadImage} width="24" viewBox="0 0 24 24" aria-hidden="true">
               <g>
