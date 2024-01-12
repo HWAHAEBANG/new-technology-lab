@@ -1,0 +1,49 @@
+.ul{
+    background-color: white;
+    border-radius: 10px;
+    margin: 5px;
+    list-style-type: none;
+    overflow: hidden;
+
+    & > h3 {
+       background-color: #F2F2F2;
+       padding: 10px;
+       font-size: 17px;
+    }
+}
+
+.li{
+    background-color: #F2F2F2;
+    padding: 10px 15px;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    
+    &:hover{
+        filter: brightness(0.97);
+    }
+    align-items: center;
+}
+
+.userWrapper{
+ display: flex;
+ flex-direction: column;
+ flex:1
+}
+
+.userName{
+font-size: 12px;
+
+}
+
+.userId{
+font-size: 10px;
+}
+
+.followBtn{
+    width: 50px;
+    height: 20px;
+    font-size: 10px;
+}
+
+

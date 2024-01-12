@@ -1,7 +1,6 @@
 .mainContainer{
-    background-color: white;
     display: flex;
-    align-items: stretch;
+    width: 1000px;
 }
 
 .leftWrapper {
@@ -10,12 +9,13 @@
     width: 200px;
     flex-grow: 1;
     border-right: 1px solid gainsboro;
+    // background-color: white;
 }
 
 .rightWrapper {
     margin-left: 200px;
     height: 100dvh;
-    width: 700px;
+    width: 800px;
     flex-grow: 1;
     display: flex;
     justify-content: space-between;
@@ -23,11 +23,10 @@
 
 .contentArea{
     width: 700px;
-    border-right: 1px solid gainsboro;
 }
 
 .asideBar {
-    width: 300px;
+    width: 350px;
 }
 
 .logoWrapper{

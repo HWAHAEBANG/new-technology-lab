@@ -2,6 +2,8 @@ import React, { ReactNode } from 'react'
 import styles from './Layout.module.scss'
 import Nav from './_component/nav'
 import Image from 'next/image'
+import TrendSearch from './_component/TrendSearch'
+import FollowRecommends from './_component/FollowRecommends'
 
 interface Props {
   children: ReactNode
@@ -18,7 +20,10 @@ const Layout = ({ children }: Props) => {
       </section>
       <section className={styles.rightWrapper}>
         <section className={styles.contentArea}>{children}</section>
-        <aside className={styles.asideBar}>가</aside>
+        <aside className={styles.asideBar}>
+          <TrendSearch />
+          <FollowRecommends />
+        </aside>
       </section>
     </main>
   )
