@@ -1,7 +1,7 @@
-import React from 'react'
+import { redirect } from 'next/navigation'
 
 const Sns = () => {
-  return <div>Sns</div>
+  redirect('sns/home')
 }
 
 export default Sns
