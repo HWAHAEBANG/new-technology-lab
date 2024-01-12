@@ -32,12 +32,12 @@ cursor: pointer;
     display: flex;
     align-items: center;
     gap: 10px;
-    background-color: white;
     padding: 10px;
+    border-radius: 5px;
     
     
     &:hover{
-        filter: brightness(0.97);
+        background-color: #F2F2F2;
     }
 }
 
