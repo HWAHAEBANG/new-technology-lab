@@ -3,6 +3,7 @@ import Tap from './_component/Tab'
 import TabProvider from './_component/TabProvider'
 import PostForm from './_component/PostForm'
 import styles from './Home.module.scss'
+import TabDecider from './_component/TabDecider'
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <TabProvider>
         <Tap />
         <PostForm />
+        <TabDecider />
       </TabProvider>
     </main>
   )

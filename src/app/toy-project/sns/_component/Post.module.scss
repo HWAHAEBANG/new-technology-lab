@@ -1,0 +1,93 @@
+.container{
+display: flex;
+gap: 10px;
+padding: 10px;
+border-bottom: 1px solid gainsboro;
+}
+
+.wrapper{
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+
+
+.userName{
+    font-weight: 700;
+}
+
+.time{
+font-size: 12px;
+color: gray;
+}
+
+.content{
+    padding: 0px 0;
+}
+
+.img{
+    margin: 20px 0;
+    max-width: 430px;
+}
+
+
+.btnWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.commentBtn{
+    background:none;
+    border: none;
+    cursor: pointer;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    
+    &:hover{
+        fill: rgb(29, 155, 240)   
+    }
+
+    &:hover > span {
+      color: rgb(29, 155, 240);  
+    }
+}
+
+.repostBtn{
+    background:none;
+    border: none;
+    cursor: pointer;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    
+    &:hover{
+        fill: rgb(11, 175, 123);
+    }
+    
+    &:hover > span {
+      color: rgb(11, 175, 123);  
+    }
+}
+
+.likeBtn{
+    background:none;
+    border: none;
+    cursor: pointer;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+
+    &:hover{
+        fill: rgb(228, 34, 126);    
+    }
+
+    &:hover > span {
+      color: rgb(228, 34, 126);  
+    }
+}
