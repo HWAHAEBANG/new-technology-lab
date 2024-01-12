@@ -2,7 +2,7 @@
     position: fixed;
     top: 0;
     display: flex;
-    width: 490px;
+    width: 535px;
     height: 70px;
     backdrop-filter: blur(10px);
     border-bottom: 1px solid gainsboro;
@@ -18,7 +18,7 @@
 
     & > button:hover {
     background-color: white;
-    filter: brightness(0.97);
+    filter: brightness(0.85);
     }
 }
 
