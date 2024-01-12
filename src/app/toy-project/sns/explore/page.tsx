@@ -1,7 +1,12 @@
 import React from 'react'
+import TrendSearch from '../_component/TrendSearch'
 
 const Explore = () => {
-  return <div>Explore</div>
+  return (
+    <>
+      <TrendSearch />
+    </>
+  )
 }
 
 export default Explore
