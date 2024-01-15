@@ -4,6 +4,7 @@ import React, { FormEvent, useState } from 'react'
 import styles from './SigninModal.module.scss'
 import InputBox from '@/app/_component/InputBox'
 import { useRouter } from 'next/navigation'
+import { signIn } from 'next-auth/react'
 
 interface UserInfo {
   id: string
@@ -18,10 +19,30 @@ const SigninModal = () => {
 
   const router = useRouter()
 
-  const login = (e: FormEvent<HTMLFormElement>) => {
+  const login = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     const { id, pw } = userInfo
-    alert(`${id}, ${pw}`)
+    try {
+      const response = await signIn('credencials', {
+        username: id,
+        password: pw,
+        redirect: false,
+      })
+      if (!response?.ok) {
+        // setMessage('아이디와 비밀번호가 일치하지 않습니다.');
+      } else {
+        router.replace('/home')
+      }
+    } catch (err) {
+      console.error(err)
+      // setMessage('아이디와 비밀번호가 일치하지 않습니다.');
+    }
+    //  alert('로그인 성공')
+    //  router.replace("/toy-project/sns")
+    //  } catch(error){
+    //   alert('로그인 실패')
+    //     console.error(error);
+    //  }
   }
 
   const close = () => {
@@ -50,9 +71,7 @@ const SigninModal = () => {
           inputValue={userInfo}
           setInputValue={setUserInfo}
         />
-        <button type="submit" className={styles.button}>
-          로그인
-        </button>
+        <button /* type="submit" */ className={styles.button}>로그인</button>
         <button
           className={styles.signup}
           type="button"
